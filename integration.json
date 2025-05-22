@@ -8,7 +8,7 @@
       "app_name": "SMS Bot",
       "app_description": "Enhanced SMS Bot notifier with AI context enrichment.",
       "app_logo": "https://img.freepik.com/free-vector/mail-illustration_24908-54790.jpg",
-      "app_url": "https://sms-bot-hu7l.onrender.com/",
+      "app_url": "https://sms-bot-1b6w.onrender.com/",
       "background_color": "#ffffff"
     },
     "is_active": true,
@@ -58,6 +58,6 @@
         "default": "Hi there, you have a meeting scheduled. Please be on time."
       }
     ],
-    "target_url": "https://sms-bot-hu7l.onrender.com/integration"
+    "target_url": "https://sms-bot-1b6w.onrender.com/integration.json"
   }
 }
