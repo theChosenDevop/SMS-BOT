@@ -1,0 +1,63 @@
+{
+  "data": {
+    "date": {
+      "created_at": "2025-04-16",
+      "updated_at": "2025-04-16"
+    },
+    "descriptions": {
+      "app_name": "SMS Bot",
+      "app_description": "Enhanced SMS Bot notifier with AI context enrichment.",
+      "app_logo": "https://img.freepik.com/free-vector/mail-illustration_24908-54790.jpg",
+      "app_url": "https://sms-bot-hu7l.onrender.com/",
+      "background_color": "#ffffff"
+    },
+    "is_active": true,
+    "integration_type": "modifier",
+    "integration_category": "Email & Messaging",
+    "key_features": [
+      "AI-enhanced messaging",
+      "International phone number support",
+      "Delivery status reporting"
+    ],
+    "author": "theChosenDevop",
+    "settings": [
+      {
+        "label": "Recipient_Phone_Number",
+        "type": "text",
+        "required": true,
+        "default": "+2340000000000"
+      },
+      {
+        "label": "Message_Tone",
+        "type": "dropdown",
+        "required": false,
+        "options": [
+          "Friendly",
+          "Professional",
+          "Urgent",
+          "Casual"
+        ],
+        "default": "Friendly"
+      },
+      {
+        "label": "Send_Time",
+        "type": "date",
+        "required": true,
+        "default": "2025-04-16T10:00:00Z"
+      },
+      {
+        "label": "Test_Mode",
+        "type": "checkbox",
+        "required": false,
+        "default": false
+      },
+      {
+        "label": "Message",
+        "type": "text",
+        "required": true,
+        "default": "Hi there, you have a meeting scheduled. Please be on time."
+      }
+    ],
+    "target_url": "https://sms-bot-hu7l.onrender.com/integration"
+  }
+}

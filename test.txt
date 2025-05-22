@@ -1,0 +1,63 @@
+ts-node src/server.ts 
+Server is running on port 3000
+http://localhost:3000
+INFO [2025-04-29 17:48:12.759 +0100] (Mastra): Hello from Mastra!
+undefined
+DefaultGenerateTextResult {
+  text: 'Please provide me with a meeting transcript.\n',
+  reasoning: undefined,
+  reasoningDetails: [],
+  toolCalls: [],
+  toolResults: [],
+  finishReason: 'stop',
+  usage: { promptTokens: 113, completionTokens: 9, totalTokens: 122 },
+  warnings: [],
+  request: {
+    body: '{"generationConfig":{"temperature":0},"contents":[{"role":"user","parts":[{"text":"Summarize the meeting"}]}],"systemInstruction":{"parts":[{"text":"\\n      You are a helpful meeting summarizer that provides concise summaries of meetings.\\n      \\n      Your primary function is to help users  get summaries of meetings. When responding:\\n  
+    - Always ask for a meeting transcript if none is provided\\n      - Provide a brief summary of the meeting\\n      -Include key points and action items\\n      - Keep responses concise and informative\\n      \\n      Use the meetingSummarizerTool to generate meeting summaries.."}]},"tools":{"functionDeclarations":[{"name":"meetingSummarizerTool","description":"Summarizes meeting transcripts into structured summaries with key points and action items."}]},"toolConfig":{"functionCallingConfig":{"mode":"AUTO"}}}'
+  },
+  response: {
+    id: 'aitxt-nAHNpNrImYJTNGc2kNQWfuCT',
+    timestamp: 2025-04-29T16:48:14.214Z,
+    modelId: 'gemini-1.5-pro',
+    headers: {
+      'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000',
+      'content-encoding': 'gzip',
+      'content-type': 'application/json; charset=UTF-8',
+      date: 'Tue, 29 Apr 2025 16:48:12 GMT',
+      server: 'scaffolding on HTTPServer2',
+      'server-timing': 'gfet4t7; dur=603',
+      'transfer-encoding': 'chunked',
+      vary: 'Origin, X-Origin, Referer',
+      'x-content-type-options': 'nosniff',
+      'x-frame-options': 'SAMEORIGIN',
+      'x-xss-protection': '0'
+    },
+    messages: [ [Object] ]
+  },
+  steps: [
+    {
+      stepType: 'initial',
+      text: 'Please provide me with a meeting transcript.\n',
+      reasoning: undefined,
+      reasoningDetails: [],
+      sources: [],
+      toolCalls: [],
+      toolResults: [],
+      finishReason: 'stop',
+      usage: [Object],
+      warnings: [],
+      logprobs: undefined,
+      request: [Object],
+      response: [Object],
+      providerMetadata: [Object],
+      experimental_providerMetadata: [Object],
+      isContinued: false
+    }
+  ],
+  experimental_providerMetadata: { google: { groundingMetadata: null, safetyRatings: null } },
+  providerMetadata: { google: { groundingMetadata: null, safetyRatings: null } },
+  logprobs: undefined,
+  outputResolver: [Function: outputResolver],
+  sources: []
+}
