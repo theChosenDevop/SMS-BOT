@@ -28,11 +28,11 @@ const sms = at.SMS
 
 app.get('/.well-known/a2a/agent-card.json', (req: Request, res: Response) => {
   // res.send(agentcard)
+  res.json("this is a test")
+})
+app.get('/integration.json', (req: Request, res: Response) => {
   res.send(integration)
 })
-// app.get('/integration.json', (req: Request, res: Response) => {
-//   res.send(integration)
-// })
 
 interface TelexIntRequest {
   jsonrpc: '2.0';
