@@ -2,7 +2,7 @@ import express, { Request, Response } from 'express'
 import { mastra } from './mastra/index'
 import { contextEnrichment } from './mastra/agents/index'
 import integration from '../integration.json'
-import agentcard from '../agent-card.json'
+import agentcard from '../agent.json'
 import africastalking from 'africastalking'
 import cors from 'cors'
 import dotenv from 'dotenv'
@@ -25,10 +25,8 @@ const at = africastalking({
 const sms = at.SMS
 
 
-
-app.get('/.well-known/a2a/agent-card.json', (req: Request, res: Response) => {
-  // res.send(agentcard)
-  res.json("this is a test")
+app.get('/.well-known/agent.json', (req: Request, res: Response) => {
+  res.send(agentcard)
 })
 app.get('/integration.json', (req: Request, res: Response) => {
   res.send(integration)
