@@ -2,6 +2,10 @@
   "name": "SMS Bot Agent",
   "description": "Enhanced SMS Bot notifier with AI context enrichment.",
   "url": "https://sms-bot-1b6w.onrender.com/webhook",
+  "provider": {
+    "organization": "Telex",
+    "url": "https://telex.im"
+  },
   "version": "1.0.0",
    "defaultInputModes": [
         "application/json"
